@@ -1,0 +1,51 @@
+/* components/TopBar.css */
+.topbar {
+    width: 430px;
+    height: 80px;
+    background-color: rgb(255, 255, 255,0.95); 
+    color: #333333; /* 白色字体 */
+    padding: 10px; /* 内边距，使内容居中 */
+    margin-bottom: 10px; /* 底部外边距，用于与其他元素分隔 */
+    z-index: 20; /* 确保 Notification 处于最上层 */
+    position:fixed; /* 添加此行，使 z-index 生效 */
+    top: 0px; /* 设置距离顶端的位置 */
+    align-items: center;
+    left: 50%; /* 水平方向上居中 */
+    transform: translateX(-50%); /* 水平方向上居中 */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    
+  }
+  
+  .topbar-content {
+    /* 添加文字内容的样式 */
+    font-size:17px;
+    font-weight: bold;
+    /* 其他文字样式属性 */
+    display: flex;
+    justify-content: center;
+    height: 100%; /* 使内容高度充满父容器 */
+    align-items:flex-end
+    
+  }
+  
+
+
+
+.topbar-icons {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+}
+
+.icon-left {
+  color: #000000; /* 左侧图标颜色 */
+  font-size: 20px; /* 左侧图标大小 */
+  margin-right: 10px; /* 左侧图标右边距 */
+}
+
+.icon-right {
+  color: #000000; /* 右侧图标颜色 */
+  font-size: 20px; /* 右侧图标大小 */
+  margin-left: 10px; /* 右侧图标左边距 */
+}

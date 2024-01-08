@@ -1,0 +1,41 @@
+/* src/components/Navbar.css */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff; /* 谷歌地图的蓝色 */
+  padding: 15px 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #597ae8; /* 谷歌地图的蓝色 */
+}
+
+.navbar a.active {
+  color: #597ae8; /* 当前页面的颜色 */
+}
+
+.navbar a span {
+  margin-top: 3px; /* 调整文字与图标的间距 */
+  font-size: 13px; /* 调整文字大小 */
+}
+
+/* 如果你想在图标和文字之间增加一些间距，可以加上这一段 */
+.navbar a .icon {
+  margin-bottom: 5px;
+  font-size: 20px; /* 调整图标大小 */
+}

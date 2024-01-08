@@ -1,0 +1,141 @@
+/* src/components/BusSearch.css */
+
+/* Bus Search Container */
+.bus-search-container {
+  padding: 15px; /* 缩小容器内边距 */
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* 缩小容器内元素间距 */
+  width: 430px;
+  height: 200px;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center; /* 垂直居中元素 */
+}
+
+/* Label Styles */
+label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+/* Select and Button Styles */
+select,
+button {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #6d6b6b;
+}
+
+/* Select Styles */
+select {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight:bolder
+}
+
+/* Shrink Button Styles */
+button.shrink {
+  background-color: #d93025;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.shrink:hover {
+  background-color: #b0261d;
+}
+
+/* Bus Info Container */
+.bus-info-container {
+  margin-top: 15px; /* 缩小信息容器与上方元素间距 */
+}
+
+/* Bus Info Box Styles */
+.bus-info-box {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-color: #3367d6;
+  border-width:10px ;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Bus Info Box Button Styles */
+.bus-info-box button {
+  background-color: #4285f4;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.bus-info-box button:hover {
+  background-color: #3367d6;
+}
+
+/* Swap Button Styles */
+.swap-button {
+  width: 15px;
+  height: 40px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent; /* 去除背景色 */
+  color: #666; /* 正常状态下灰色 */
+  align-self: flex-start; /* 放置在垂直方向的顶部 */
+}
+
+
+
+/* Bus Search Container Info Open Styles */
+.bus-search-container.info-open {
+  height: auto;
+  width: 430px;
+}
+
+
+.CalendaPicker {
+  
+  border-radius: 4px;
+  z-index:10000;
+}
+
+.swap-icon {
+  font-size: 40px; /* 或者您希望的大小 */
+  color: #808080; /* 常态下为灰色 */
+  transition: color 0.3s, transform 0.3s; /* 添加颜色和 transform 动画效果 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swap-icon:hover {
+  color: #3367d6; /* 鼠标悬停时变蓝色 */
+  cursor: pointer; /* 鼠标变为手型 */
+}
+
+.swap-icon:active {
+  transform: scale(1.2); /* 点击时变大的动画效果 */
+}
